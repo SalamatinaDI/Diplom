@@ -1,0 +1,43 @@
+﻿<Page x:Class="VodogreyApp.Pages.UserServiceListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:VodogreyApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UserServiceListPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Наша продукция" HorizontalAlignment="Center" FontSize="35"/>
+        <Button Content="Выход" HorizontalAlignment="Right" Width="60" Height="25" Background="Transparent" BorderBrush="Transparent" Click="BtStartClick"/>
+            <Grid Grid.Row="1" Margin="50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10">
+                <Image Source="/Resources/37-300x300.jpg" />
+                <Button Content="Водонагреватели" Margin="5" BorderBrush="Transparent" Background="Transparent" Height="30" Width="150" Click="WaterHeatingClick"/>
+        </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Vertical" Margin="10">
+                <Image Source="/Resources/9982.jpg" />
+                <Button Content="Бойлеры" Margin="5" BorderBrush="Transparent" Background="Transparent" Height="30" Width="150" Click="BoilerClick"/>
+            </StackPanel>
+            <StackPanel Grid.Column="2" Orientation="Vertical" Margin="10">
+                <Image Source="/Resources/9978.jpg" />
+                <Button Content="Конвекторы" Margin="5" BorderBrush="Transparent" Background="Transparent" Height="30" Width="150" Click="ConvectorClick"/>
+            </StackPanel>
+            <StackPanel Grid.Column="3" Orientation="Vertical" Margin="10">
+                <Image Source="/Resources/11021-300x300.jpg" />
+                <Button Content="Полотенцесушители" Margin="5" BorderBrush="Transparent" Background="Transparent" Height="30" Width="150" Click="TowelDryerClick"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
